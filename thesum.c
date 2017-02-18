@@ -13,9 +13,9 @@ int main(){
   printf("Inserisci il valore da sommare:");
   scanf("%d", &b);
   s=a+b;
-  printf("\nNuovo valore: %d", s);
-  FILE *l=fopen("sum.dat", "w");
-  fprintf(l, "%d\n", s);
-  fclose(l);
+  printf("\nNuovo valore: %d\n", s);
+  f=fopen("sum.dat", "w");
+  fprintf(f, "%d\n", s);
+  fclose(f);
   return 0;
 }
